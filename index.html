@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Spa de Clima</h1>
+        <div class="relative">
+            <input type="text" id="cityInput" placeholder="Busca cualquier ciudad">
+            <div id="autocompleteOptions"></div>
+        </div>
+        <button id="getWeatherButton" onclick="getWeather()">Ver Clima</button>
+        <div id="weatherInfo"></div>
+        <div class="loader-box">
+            <div id="loadingSpinner" class="spinner"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

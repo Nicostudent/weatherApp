@@ -1,0 +1,97 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;   
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #cityInput {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .relative{
+    position: relative;
+  }
+  #autocompleteOptions {
+    max-height: 250px;
+    width: 250px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0px;
+    top: 38px;
+  }
+  
+  .autocomplete-option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .autocomplete-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  #weatherInfo {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #getWeatherButton {
+    width: 50%;
+    justify-self: end;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #getWeatherButton:hover {
+    background-color: #0056b3;
+  }
+.loader-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
+}
+.spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #007bff; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px; 
+    display: none; 
+    animation: spin 1s;   
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+    75% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
